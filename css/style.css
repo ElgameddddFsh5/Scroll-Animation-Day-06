@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 251, 219);
+  overflow: hidden;
+}
+
+main section .container .allContent .content {
+  background-color: steelblue;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgb(0 0 0 / 30%);
+  transform: translateX(400%);
+  transition: 0.9s ease;
+}
+main section .container .allContent h1 {
+  font-size: 36px;
+  color: rgb(123, 165, 219);
+}
+main section .container .allContent h2 {
+  font-size: 37px;
+}
+main section .container .allContent .content.show {
+  transform: translateX(0);
+}
